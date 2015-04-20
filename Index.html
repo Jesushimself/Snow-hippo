@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Card Counter</title>
+	<script src="keybind.js"></script>
+	<script src="function.js"></script>
+</head>
+<body>
+<center>
+
+	<button type="button" onClick="countDOWN()" style="width: 200px; height: 270px"><b>A, K, Q, J, 10<p>(Q key)</p></b></button>
+	<button type="button" onClick="middle()" style="width: 200px; height: 270px"><b>9, 8, 7<p>(W key)</p></b></button>
+	<button type="button" onClick="countUP()" style="width: 200px; height: 270px"><b>6, 5, 4, 3, 2<p>(E key)</p></b></button>
+	<p><h4>Running Count:  <a id="count">0</a></h4></p>
+	<p><h4>Cards left: <a id="Left">0</p> </h4>
+	<p><h4>True Count: <a id="truthcount">0</a></p></h4>
+	<p><h4>High Card Percent Chance: <a id="hcl">0</p></h4>
+	<p><h4>Low Card Percent Chance: <a id="lcl">0</p></h4
+	<p><h4> Bet multiplier: <a id="trueOne">x1</a></p></h4>
+	
+	Number of decks  
+	<select id="selectDeck" onchange="deckSelection('selectDeck')">
+		<option value=""></option>
+		<option value="1">One</option>
+		<option value="2">Two</option>
+		<option value="3">Three</option>
+		<option value="4">Four</option>
+		<option value="5">Five</option>
+		<option value="6">six</option>
+	</select>
+	<br>
+	<br>
+	<br>
+	<button type="button" onClick="reset()" style="width: 200px; height: 100px"><b>Reset / New Deck<p>(R key)</p></b></button>
+	<br>
+	<br>
+	<br>
+	<button type="button" onClick="doUndo()">Undo Once! <br>(U key)</button>
+
+</body>
+</html>
